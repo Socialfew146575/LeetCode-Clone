@@ -53,9 +53,9 @@ const Signup: React.FC<SignupProps> = () => {
         email: newUser.user.email,
         displayName: inputs.displayName,
         createdAt: Date.now(),
-        likedProblem: [],
-        dislikedProblem: [],
-        solvedProblem: [],
+        likedProblems: [],
+        dislikedProblems: [],
+        solvedProblems: [],
         starredProblems: [],
       };
 

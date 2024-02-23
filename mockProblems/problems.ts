@@ -14,7 +14,7 @@ export const problems: Problem[] = [
     difficulty: "Easy",
     category: "Array",
     order: 1,
-    videoId: "8-k1C6ehKuw",
+    videoId: "UXDSeD9mN-k",
   },
   {
     id: "reverse-linked-list",
@@ -38,7 +38,7 @@ export const problems: Problem[] = [
     difficulty: "Easy",
     category: "Stack",
     order: 4,
-    videoId: "xty7fr-k0TU",
+    videoId: "wkDfsKijrZ8",
   },
   {
     id: "search-a-2d-matrix",
@@ -46,7 +46,7 @@ export const problems: Problem[] = [
     difficulty: "Medium",
     category: "Binary Search",
     order: 5,
-    videoId: "ZfFl4torNg4",
+    videoId: "ZYpYur0znng",
   },
   {
     id: "container-with-most-water",
@@ -70,7 +70,7 @@ export const problems: Problem[] = [
     difficulty: "Easy",
     category: "Tree",
     order: 8,
-    videoId: "4qYTqOiRMoM",
+    videoId: "eD3tmO66aBA",
   },
   {
     id: "best-time-to-buy-and-sell-stock",

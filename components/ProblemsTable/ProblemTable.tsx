@@ -1,7 +1,7 @@
-"use client"
+"use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { BsCheckCircle } from "react-icons/bs";
+import { BsCheck2Circle, BsCheckCircle } from "react-icons/bs";
 import { AiFillYoutube } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
 import YouTube from "react-youtube";
@@ -30,7 +30,7 @@ const ProblemsTable: React.FC<ProblemsTableProps> = ({
   });
   const problems = useGetProblems(setLoadingProblems);
   const solvedProblems = useGetSolvedProblems();
-
+  // console.log(solvedProblems)
   const closeModal = () => {
     setYoutubePlayer({ isOpen: false, videoId: "" });
   };
@@ -59,9 +59,9 @@ const ProblemsTable: React.FC<ProblemsTableProps> = ({
               className={`${idx % 2 == 1 ? "bg-dark-layer-1" : ""}`}
               key={problem.id}
             >
-              <th className="px-2 py-4 font-medium whitespace-nowrap text-dark-green-s">
+              <th className="px-2 py-4 font-medium whitespace-nowrap text-dark-green-s ">
                 {solvedProblems.includes(problem.id) && (
-                  <BsCheckCircle fontSize={"18"} width="18" />
+                  <BsCheck2Circle fontSize={"18"} width="18"  />
                 )}
               </th>
               <td className="px-6 py-4">
@@ -172,6 +172,7 @@ function useGetSolvedProblems() {
       const userDoc = await getDoc(userRef);
 
       if (userDoc.exists()) {
+        console.log(userDoc.data());
         setSolvedProblems(userDoc.data().solvedProblems);
       }
     };
