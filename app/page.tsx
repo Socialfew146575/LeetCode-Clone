@@ -4,7 +4,7 @@ import Topbar from "@/components/Topbar/Topbar";
 import ProblemTable from "@/components/ProblemsTable/ProblemTable";
 import useHasMounted from "@/hooks/useHasMounted";
 
-const page = () => {
+const Page = () => {
   const [loadingProblem, setLoadingProblems] = useState(true);
 
   const hasMounted = useHasMounted()
@@ -61,7 +61,7 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
 
 const LoadingSkeleton = () => {
   return (
