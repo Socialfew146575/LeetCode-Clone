@@ -29,19 +29,17 @@ import { TiStar, TiStarOutline } from "react-icons/ti";
 
 type ProblemDescriptionProps = {
   problem: Problem;
-  _solved:boolean
+  _solved: boolean;
 };
 
-const ProblemDescription: React.FC<ProblemDescriptionProps> = ({ problem,_solved }) => {
+const ProblemDescription: React.FC<ProblemDescriptionProps> = ({
+  problem,
+  _solved,
+}) => {
   const { currentProblem, loading, problemDifficultyClass, setCurrentProblem } =
     useGetCurrentProblem(problem.id);
   const { liked, disliked, solved, starred, setData } =
     useGetUsersDataOnProblem(problem.id);
-
-
-  
-
-
 
   const [updating, setUpdating] = useState<boolean>(false);
 
@@ -157,11 +155,15 @@ const ProblemDescription: React.FC<ProblemDescriptionProps> = ({ problem,_solved
             dislikes: problemDoc.data().dislikes + 1,
           });
 
-          setCurrentProblem((prev) => (prev?{
-            ...prev,
-            likes: prev.likes - 1,
-            dislikes: prev.dislikes + 1,
-          }:null));
+          setCurrentProblem((prev) =>
+            prev
+              ? {
+                  ...prev,
+                  likes: prev.likes - 1,
+                  dislikes: prev.dislikes + 1,
+                }
+              : null
+          );
           setData((prev) => ({ ...prev, liked: false, disliked: true }));
         } else if (disliked) {
           transaction.update(userRef, {
@@ -174,11 +176,15 @@ const ProblemDescription: React.FC<ProblemDescriptionProps> = ({ problem,_solved
             dislikes: problemDoc.data().dislikes - 1,
           });
 
-          setCurrentProblem((prev) => (prev?{
-            ...prev,
+          setCurrentProblem((prev) =>
+            prev
+              ? {
+                  ...prev,
 
-            dislikes: prev?.dislikes - 1,
-          }:null));
+                  dislikes: prev?.dislikes - 1,
+                }
+              : null
+          );
           setData((prev) => ({ ...prev, disliked: false }));
         } else {
           transaction.update(userRef, {
@@ -189,10 +195,14 @@ const ProblemDescription: React.FC<ProblemDescriptionProps> = ({ problem,_solved
             dislikes: problemDoc.data().dislikes + 1,
           });
 
-          setCurrentProblem((prev) => (prev?{
-            ...prev,
-            dislikes: prev.dislikes + 1,
-          }:null));
+          setCurrentProblem((prev) =>
+            prev
+              ? {
+                  ...prev,
+                  dislikes: prev.dislikes + 1,
+                }
+              : null
+          );
           setData((prev) => ({ ...prev, disliked: true }));
         }
       }
@@ -391,7 +401,7 @@ function useGetCurrentProblem(problemId: string) {
 
       if (docSnapshot.exists()) {
         const problem = docSnapshot.data() as DBProblem;
-        setCurrentProblem({ id: docSnapshot.id, ...problem } as DBProblem);
+        setCurrentProblem({ ...problem } as DBProblem);
 
         setProblemDifficultyClass(
           problem.difficulty === "Easy"
