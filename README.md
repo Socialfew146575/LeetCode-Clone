@@ -8,6 +8,20 @@ Welcome to the LeetCode Clone project! This application is built using Next.js a
 - Submit solutions and view results
 - Track progress and performance (in progress)
 
+### ScreenShots
+![image](https://github.com/Socialfew146575/LeetCode-Clone/assets/95147819/c28fa02b-7594-410d-90d7-1cecd0c64d69)
+
+![image](https://github.com/Socialfew146575/LeetCode-Clone/assets/95147819/90a97334-c4af-4661-aeda-3c620fbb5818)
+
+
+![image](https://github.com/Socialfew146575/LeetCode-Clone/assets/95147819/7598b402-ae45-4c64-bdb1-e6b092f23557)
+![image](https://github.com/Socialfew146575/LeetCode-Clone/assets/95147819/0abd37f8-0d75-4d78-8437-ea384d0acd56)
+
+![image](https://github.com/Socialfew146575/LeetCode-Clone/assets/95147819/671886c9-0e84-4bcf-b4cf-a4126ea190f0)
+
+
+
+
 ## Getting Started
 
 First, run the development server:
