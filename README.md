@@ -13,7 +13,8 @@ Welcome to the LeetCode Clone project! This application is built using Next.js a
 
 ![image](https://github.com/Socialfew146575/LeetCode-Clone/assets/95147819/90a97334-c4af-4661-aeda-3c620fbb5818)
 
-![image](https://github.com/Socialfew146575/LeetCode-Clone/assets/95147819/07b3d844-5b6c-47bd-b481-c9045f0247e7)
+![image](https://github.com/Socialfew146575/LeetCode-Clone/assets/95147819/d99516f5-6847-4150-8399-57e9aa6e996c)
+
 
 
 ![image](https://github.com/Socialfew146575/LeetCode-Clone/assets/95147819/0abd37f8-0d75-4d78-8437-ea384d0acd56)
