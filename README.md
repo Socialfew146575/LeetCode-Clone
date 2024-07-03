@@ -1,4 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Overview
+Welcome to the LeetCode Clone project! This application is built using Next.js and aims to provide users with a platform to practice coding problems, similar to LeetCode. It supports user authentication, problem solving, and tracking progress.
 
 ## Getting Started
 
