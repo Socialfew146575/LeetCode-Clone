@@ -20,6 +20,12 @@ Welcome to the LeetCode Clone project! This application is built using Next.js a
 ![image](https://github.com/Socialfew146575/LeetCode-Clone/assets/95147819/671886c9-0e84-4bcf-b4cf-a4126ea190f0)
 
 
+### Tech Stack
+- Client-Side: Next.js
+- Server-Side : Next.js
+- Database: Firebase
+- Authentication: Firebase
+- Code Editor: VsCode
 
 
 ## Getting Started
